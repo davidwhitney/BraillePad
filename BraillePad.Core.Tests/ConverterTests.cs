@@ -56,6 +56,13 @@ namespace BraillePad.Core.Tests
             Assert.That(brailled.Count, Is.EqualTo(text.Length));
         }
 
+        private const string Nl = "\r\n";
+    }
+
+    public class BrailleSentenceTests
+    {
+        private Converter _conv = new Converter();
+
         [Test]
         public void Collection_ToString_ReturnsJoinedLetters()
         {
@@ -77,7 +84,6 @@ namespace BraillePad.Core.Tests
 
             Assert.That(brailled.Length == 6);
         }
-
-        private const string Nl = "\r\n";
+        
     }
 }

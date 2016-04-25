@@ -5,26 +5,25 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using BraillePad.Core;
 
 namespace BraillePad
 {
     [Activity(Label = "BraillePad", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
-        int count = 1;
+        private Converter _conv;
+        public Button Button => FindViewById<Button>(Resource.Id.MyButton);
+        public EditText Source => FindViewById<EditText>(Resource.Id.editText1);
+        public EditText Target => FindViewById<EditText>(Resource.Id.editText2);
 
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-
-            // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
-            // Get our button from the layout resource,
-            // and attach an event to it
-            Button button = FindViewById<Button>(Resource.Id.MyButton);
-
-            button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
+            _conv = new Converter();
+            Button.Click += (sender, args) => Target.Text = _conv.Convert(Source.Text).ToString();
         }
     }
 }
