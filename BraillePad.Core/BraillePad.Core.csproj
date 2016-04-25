@@ -37,6 +37,8 @@
     <!-- A reference to the entire .NET Framework is automatically included -->
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BrailleCharacter.cs" />
+    <Compile Include="BrailleSentence.cs" />
     <Compile Include="Converter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
