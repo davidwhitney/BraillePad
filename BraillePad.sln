@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BraillePad", "BraillePad\BraillePad.csproj", "{848EB7C7-0A08-43C7-BAD1-C3BDA4EDB9E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BraillePad.Core", "BraillePad.Core\BraillePad.Core.csproj", "{4F299713-E1D9-4416-8352-D40BD0F8AA5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BraillePad.Core.Tests", "BraillePad.Core.Tests\BraillePad.Core.Tests.csproj", "{8E8171FF-20A0-4883-9E47-782BA98DBC1D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{848EB7C7-0A08-43C7-BAD1-C3BDA4EDB9E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{848EB7C7-0A08-43C7-BAD1-C3BDA4EDB9E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{848EB7C7-0A08-43C7-BAD1-C3BDA4EDB9E3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{848EB7C7-0A08-43C7-BAD1-C3BDA4EDB9E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{848EB7C7-0A08-43C7-BAD1-C3BDA4EDB9E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{848EB7C7-0A08-43C7-BAD1-C3BDA4EDB9E3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{4F299713-E1D9-4416-8352-D40BD0F8AA5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F299713-E1D9-4416-8352-D40BD0F8AA5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F299713-E1D9-4416-8352-D40BD0F8AA5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F299713-E1D9-4416-8352-D40BD0F8AA5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E8171FF-20A0-4883-9E47-782BA98DBC1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E8171FF-20A0-4883-9E47-782BA98DBC1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E8171FF-20A0-4883-9E47-782BA98DBC1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E8171FF-20A0-4883-9E47-782BA98DBC1D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
