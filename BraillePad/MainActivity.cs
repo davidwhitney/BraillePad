@@ -9,7 +9,7 @@ using BraillePad.Core;
 
 namespace BraillePad
 {
-    [Activity(Label = "BraillePad", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "BraillePad", MainLauncher = true, Icon = "@drawable/icon", Name = "com.davidwhitney.braillepad")]
     public class MainActivity : Activity
     {
         private Converter _conv;
@@ -24,6 +24,7 @@ namespace BraillePad
 
             _conv = new Converter();
             Button.Click += (sender, args) => Target.Text = _conv.Convert(Source.Text).ToString();
+
         }
     }
 }

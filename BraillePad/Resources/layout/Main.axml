@@ -6,7 +6,7 @@
     <EditText
         android:inputType="textMultiLine"
         android:layout_width="match_parent"
-        android:layout_height="172.0dp"
+        android:layout_height="98.0dp"
         android:id="@+id/editText1" />
     <Button
         android:id="@+id/MyButton"
@@ -17,5 +17,8 @@
         android:inputType="textMultiLine"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/editText2" />
+        android:id="@+id/editText2"
+        android:lineSpacingMultiplier="0.4"
+        android:textAlignment="viewStart"
+        android:textIsSelectable="true" />
 </LinearLayout>
